@@ -1,0 +1,20 @@
+# Requirements
+
+MXNet
+TensoRT=5.0
+ONNX=
+
+# Usage
+
+mytrain_rcap.py: train mxnet model
+myval_multilabel.py: validate mxnet model
+plot_curve.py: plot acc curve
+model save the model files
+
+mxnet_to_onnx.py: convert mxnet to onnx
+onnx_to_trtengine.py: convert onnx to tensorRT engine
+int8calibration.py: calibrate onnx model and transform it to in8 tensorRT engine
+
+aic_tensorrt_acap_2s is a example of the docker image construction process
+
+
